@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KDZ10Rub"
         mc:Ignorable="d"
-        Title="Монеты по 10 рублей" Height="208" Width="525" ResizeMode="NoResize">
-    <Grid>
-        <Button x:Name="Lodin" Content="Регистрация" FontFamily="Times New Roman" FontSize="30" Margin="257,75,72,51"/>
-        <Button x:Name="Search" Content="Поиск" FontFamily="Times New Roman" FontSize="30" Margin="72,75,311,51"/>
+        Title="Имеющиеся монеты" Height="285" Width="583" Background="AliceBlue" ResizeMode="NoResize">
+    <Grid Background="AliceBlue">
+        <Button x:Name="NewCoin" FontFamily="Times New Roman" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="129" Height="28" Margin="438,0,0,169" Click="NewCoin_Click">Добавить монету</Button>
+        <Button x:Name="DeleteCoin" FontFamily="Times New Roman" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="129" Height="28" Margin="0,0,10,85" IsEnabled="False" Click="Delete_Click">Удалить монету</Button>
+        <ListBox x:Name="listBoxCoin" DisplayMemberPath="Information" Margin="10,93,155,10" SelectionChanged="listBoxCoin_SelectionChanged" />
+        <Label x:Name="labelSearch" FontFamily="Times New Roman" FontSize="15" Content="Поиск:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="62,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" TextChanged="Search_TextChanged"/>
+        <Label x:Name="Result" FontFamily="Times New Roman" FontSize="15" Content="Результат поиска:" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
