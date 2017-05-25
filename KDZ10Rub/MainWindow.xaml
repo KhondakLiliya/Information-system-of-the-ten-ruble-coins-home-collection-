@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KDZ10Rub"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Монеты по 10 рублей" Height="208" Width="525" ResizeMode="NoResize">
     <Grid>
-        
+        <Button x:Name="Lodin" Content="Регистрация" FontFamily="Times New Roman" FontSize="30" Margin="257,75,72,51"/>
+        <Button x:Name="Search" Content="Поиск" FontFamily="Times New Roman" FontSize="30" Margin="72,75,311,51"/>
+
     </Grid>
 </Window>
