@@ -59,7 +59,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Login.xaml">
+    <Page Include="HaveCoins.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -71,8 +71,8 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Coins.cs" />
-    <Compile Include="Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
+    <Compile Include="HaveCoins.xaml.cs">
+      <DependentUpon>HaveCoins.xaml</DependentUpon>
     </Compile>
     <Page Include="LoginPage.xaml">
       <SubType>Designer</SubType>

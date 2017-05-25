@@ -5,14 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KDZ10Rub"
         mc:Ignorable="d"
-        Title="Имеющиеся монеты" Height="285" Width="583" Background="AliceBlue" ResizeMode="NoResize">
-    <Grid Background="AliceBlue">
-        <Button x:Name="NewCoin" FontFamily="Times New Roman" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="129" Height="28" Margin="438,0,0,169" Click="NewCoin_Click">Добавить монету</Button>
-        <Button x:Name="DeleteCoin" FontFamily="Times New Roman" FontSize="15" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="129" Height="28" Margin="0,0,10,85" IsEnabled="False" Click="Delete_Click">Удалить монету</Button>
-        <ListBox x:Name="listBoxCoin" DisplayMemberPath="Information" Margin="10,93,155,10" SelectionChanged="listBoxCoin_SelectionChanged" />
-        <Label x:Name="labelSearch" FontFamily="Times New Roman" FontSize="15" Content="Поиск:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Search" HorizontalAlignment="Left" Height="23" Margin="62,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" TextChanged="Search_TextChanged"/>
-        <Label x:Name="Result" FontFamily="Times New Roman" FontSize="15" Content="Результат поиска:" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
-
+        Title="Авторизация" Height="199.245" Width="499.245" Background="AliceBlue" ResizeMode="NoResize" >
+    <Grid Height="172" VerticalAlignment="Top" Margin="0,0,0,-1">
+        <Button x:Name="LogIn" Content="Войти" FontFamily="Times New Roman Bold" FontSize="20" Margin="316,55,51,69" RenderTransformOrigin="-0.473,0.612" Click="button_Click"/>
+        <TextBox x:Name="Username1" HorizontalAlignment="Left" Height="22" Margin="122,46,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
+        <TextBlock x:Name="Username2" FontFamily="Times New Roman" FontSize="22" HorizontalAlignment="Left" Margin="31,43,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="68"/>
+        <TextBox x:Name="Password1" HorizontalAlignment="Left" Height="23" Margin="122,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBlock x:Name="Password2" FontFamily="Times New Roman" FontSize="22" HorizontalAlignment="Left" Margin="31,97,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top"/>
     </Grid>
 </Window>

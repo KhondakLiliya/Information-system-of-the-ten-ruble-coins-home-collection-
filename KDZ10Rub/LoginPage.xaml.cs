@@ -29,7 +29,7 @@ namespace KDZ10Rub
         {
             if (Username1.Text == "Liliya" && Password1.Text == "lil1898")
             {
-                MainWindow coin = new MainWindow();
+                HaveCoins coin = new HaveCoins();
                 LoginPage lp = new LoginPage();
                 NavigationService.Navigate(new Uri("coins.xaml", UriKind.Relative));
             }

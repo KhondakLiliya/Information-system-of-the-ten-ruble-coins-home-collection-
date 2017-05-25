@@ -44,7 +44,7 @@ namespace KDZ10Rub
         {
             get
             {
-                return $"{_mint}-{_description}-{_year}";
+                return $"{_mint}-{_year}-{_description}";
             }
         }
 
