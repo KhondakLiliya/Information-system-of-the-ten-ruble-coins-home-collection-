@@ -62,7 +62,7 @@ namespace KDZ10Rub
             {
                 foreach (var coin in _coins)
                 {
-                    sw.WriteLine($"{coin.Mint} - {coin.Year} - {coin.Description}");
+                    sw.WriteLine("{coin.Mint} - {coin.Year} - {coin.Description}");
                 }
             }
         }
