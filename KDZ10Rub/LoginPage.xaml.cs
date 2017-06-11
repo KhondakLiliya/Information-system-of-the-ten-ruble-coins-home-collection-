@@ -33,6 +33,7 @@ namespace KDZ10Rub
                 LoginPage lp = new LoginPage();
                 NavigationService.Navigate(new Uri("coins.xaml", UriKind.Relative));
             }
+          
         }
     }
 }

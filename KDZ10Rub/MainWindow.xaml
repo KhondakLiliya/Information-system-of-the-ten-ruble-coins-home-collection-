@@ -8,9 +8,9 @@
         Title="Авторизация" Height="199.245" Width="499.245" Background="AliceBlue" ResizeMode="NoResize" >
     <Grid Height="172" VerticalAlignment="Top" Margin="0,0,0,-1">
         <Button x:Name="LogIn" Content="Войти" FontFamily="Times New Roman Bold" FontSize="20" Margin="316,55,51,69" RenderTransformOrigin="-0.473,0.612" Click="button_Click"/>
-        <TextBox x:Name="Username1" HorizontalAlignment="Left" Height="22" Margin="122,46,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="Username1" HorizontalAlignment="Left" Height="22" Margin="122,46,0,0" TextWrapping="Wrap" Foreground="LightGray" Text="Liliya" VerticalAlignment="Top" Width="150"/>
         <TextBlock x:Name="Username2" FontFamily="Times New Roman" FontSize="22" HorizontalAlignment="Left" Margin="31,43,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="68"/>
-        <TextBox x:Name="Password1" HorizontalAlignment="Left" Height="23" Margin="122,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
+        <TextBox x:Name="Password1" HorizontalAlignment="Left" Height="23" Margin="122,97,0,0" Foreground="LightGray" Text="lil1898" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
         <TextBlock x:Name="Password2" FontFamily="Times New Roman" FontSize="22" HorizontalAlignment="Left" Margin="31,97,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top"/>
     </Grid>
 </Window>

@@ -21,7 +21,7 @@ namespace KDZ10Rub
     public partial class HaveCoins : Window
     {
         const string FileName = "CoinsList.txt";
-        List<Coins> _coins = new List<Coins>();
+        public List<Coins> _coins = new List<Coins>();
 
         public HaveCoins()
         {
@@ -31,7 +31,7 @@ namespace KDZ10Rub
 
         private void RefreshListBox()
         {
-            listBoxCoin.ItemsSource = null;
+            
             listBoxCoin.ItemsSource = _coins;
         }
 
@@ -58,11 +58,11 @@ namespace KDZ10Rub
 
         private void SaveData()
         {
-            using (var str = new StreamWriter(FileName))
+            using (var sw = new StreamWriter(FileName))
             {
                 foreach (var coin in _coins)
                 {
-                    str.WriteLine($"{coin.Mint} - {coin.Year} - {coin.Description}");
+                    sw.WriteLine($"{coin.Mint} - {coin.Year} - {coin.Description}");
                 }
             }
         }
